@@ -4,15 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#602D89"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/appName"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#441965"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Time Tracker Pro"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/school_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#9553C8"
+        android:text="School Schedule"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <Button
+        android:id="@+id/activity_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#9453C7"
+        android:text="Activity Planner"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/school_button"
+        app:layout_constraintStart_toStartOf="@+id/school_button"
+        app:layout_constraintTop_toBottomOf="@+id/school_button" />
+
+    <Button
+        android:id="@+id/list_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#9353C6"
+        android:text="Daily To-Do List"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/activity_button"
+        app:layout_constraintStart_toStartOf="@+id/activity_button"
+        app:layout_constraintTop_toBottomOf="@+id/activity_button" />
+
+    <Button
+        android:id="@+id/journal_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#9353C6"
+        android:text="Daily Journal"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/list_button"
+        app:layout_constraintStart_toStartOf="@+id/list_button"
+        app:layout_constraintTop_toBottomOf="@+id/list_button" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
