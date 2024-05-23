@@ -1,11 +1,12 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("androidx.navigation.safeargs.kotlin")
 }
 
 android {
     namespace = "com.example.androidfinalproject"
-    compileSdk = 33
+    compileSdk = 34
     buildFeatures {
         viewBinding = true
     }
@@ -57,6 +58,6 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.6.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
 
-
+    implementation ("androidx.recyclerview:recyclerview:1.3.2")
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.3.0")
 }
